@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - ALPHA ELITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Player Dashboard</h1>
+
+<div class="dashboard-box">
+    <p><strong>Name:</strong> <span id="playerName"></span></p>
+    <p><strong>Matches Played:</strong> <span id="matches">0</span></p>
+    <p><strong>Total Winning Amount:</strong> ₹ <span id="amount">0</span></p>
+
+    <button onclick="addMatch()">Add Match</button>
+    <button onclick="addWinning()">Add Winning ₹</button>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

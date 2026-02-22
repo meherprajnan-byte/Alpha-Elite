@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #000000, #001f3f);
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    animation: glow 2s infinite alternate;
+}
+
+.auth-container {
+    padding: 30px;
+}
+
+.form-box, .dashboard-box {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00c3ff;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #00c3ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 5px #00c3ff); }
+    to { filter: drop-shadow(0 0 20px #00c3ff); }
+}
