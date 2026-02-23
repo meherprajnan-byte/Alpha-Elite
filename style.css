@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header{
+    background:hsl(224, 41%, 7%);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    position:relative;
+}
+
+.logo img{
+    height:60px;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+}
+
+/* Hero */
+.hero{
+    background:linear-gradient(to right,#0b0f1a,#1f2a44);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero-logo{
+    width:150px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+/* Players */
+.players{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.player-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:25px;
+    margin-top:30px;
+}   align-items:center
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.photo{
+    height:150px;
+    background:#ddd;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+/* About & Contact */
+.about, .contact{
+    padding:50px 20px;
+    text-align:center;
+    background:#f4f4f4;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* 📱 Mobile Responsive */
+@media(max-width:768px){
+
+    nav{
+        display:none;
+        flex-direction:column;
+        background:#0b0f1a;
+        position:absolute;
+        top:80px;
+        right:0;
+        width:200px;
+        padding:20px;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+}
